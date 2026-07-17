@@ -1,19 +1,18 @@
-/*
-=========================================
-Print Receipt
-=========================================
-*/
+@media print {
 
-document.addEventListener("DOMContentLoaded", function () {
+    nav,
+    .btn,
+    .modal,
+    #printReceipt {
+        display: none !important;
+    }
 
-    const printButton = document.getElementById("printReceipt");
+    body {
+        background: white !important;
+    }
 
-    if (!printButton) return;
-
-    printButton.addEventListener("click", function () {
-
-        window.print();
-
-    });
-
-});
+    .card {
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
